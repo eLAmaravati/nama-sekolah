@@ -8,6 +8,19 @@
     box-sizing: border-box;
 }
 
+/* ----- Global -----*/
+body {
+    min-height: 100vh;
+}
+
+a {
+    color: limegreen;
+
+    &:hover {
+        color: #333;
+    }
+}
+
 table {
     counter-reset: section;
 }
@@ -40,12 +53,4 @@ table {
 .navbar-brand {
     color: limegreen !important;
     font-weight: bold;
-
-    // &::after {
-    //     content: '';
-    //     display: block;
-    //     border: 2px solid limegreen;
-    //     border-radius: 10%;
-    //     margin-top: 5px;
-    // }
 }

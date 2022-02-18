@@ -28,6 +28,8 @@ $('.navbar-brand').on('click', function () {
 	$('.nav-link').removeClass('active');
 	$(this).addClass('active');
 	semuaSekolah();
+
+	$('#jenjang-navigasi').html('Sekolah');
 });
 
 
