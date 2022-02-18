@@ -18,6 +18,7 @@ table {
 }
 
 .navbar-nav {
+
     .nav-link.active {
         color: limegreen !important;
         font-weight: bold;
@@ -34,4 +35,17 @@ table {
 
 #jenjang-navigasi {
     color: limegreen;
+}
+
+.navbar-brand {
+    color: limegreen !important;
+    font-weight: bold;
+
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     border: 2px solid limegreen;
+    //     border-radius: 10%;
+    //     margin-top: 5px;
+    // }
 }

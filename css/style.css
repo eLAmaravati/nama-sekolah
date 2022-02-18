@@ -30,4 +30,9 @@ table {
 
 #jenjang-navigasi {
   color: limegreen;
+}
+
+.navbar-brand {
+  color: limegreen !important;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
