@@ -1,43 +1,34 @@
-function namaSekolah() {
-	$.ajax({
-		url: 'https://api-sekolah-indonesia.herokuapp.com/',
-		type: 'get',
-		dataType: 'json',
-		data: {
-			'page': 1,
-			'perPage': 5,
-			'sekolah': 'SMK'
-		},
-		
-		success: function (result) {
-			if (result.Response == "success") {
-				let movies = result.Search;
-				
-				$.each(movies, function (i, data) {
-					$('#nama-sekolah').append(`
-						<div class="col-md-3 mb-5">
-							<div class="card h-100">
-								<img src="`+ data.Poster + `" class="card-img-top movie-poster" alt="">
-								<div class="card-body text-center">
-									<h2 class="card-title movie-title">`+ data.sekolah +`</h2>
-									<p class="card-subtitle mb-2 text-muted">`+ data.bentuk +`</p>
-									<a href="#" class="card-link see-detail" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="`+ data.imdbID +`">See Detail</a>
-								</div>
-							</div>
-						</div>
-					`);
-				});
+$.getJSON('https://api-sekolah-indonesia.herokuapp.com/sekolah?page=1&perPage=7', function (data) {
+	
+	let daftarSekolah = data.dataSekolah;
 
-				// Menghilangkan input di search bar
-				$('#search-input').val('');
-					
-			}
-			
-
-		}
+	$.each(daftarSekolah, function (i, data) {
+		$('#nama-sekolah').append(`
 		
+		<tr>
+				<th scope="row" class="count"></th>
+				<td>`+ data.bentuk +`</td>
+				<td>`+ data.sekolah +`</td>
+				<td>`+ data.npsn +`</td>
+				<td>`+ data.propinsi +`</td>
+				<td>`+ data.kabupaten_kota +`</td>
+		</tr>
+		`)
 		
 	});
-}
+});
 
-console.log(namaSekolah);
+
+// Menu Navigation
+$('.nav-link').on('click', function () {
+	$('.nav-link').removeClass('active');
+	$(this).addClass('active');
+
+	// Ganti H1
+	let navigasi = $(this).html();
+	$('#jenjang-navigasi').html(navigasi);
+
+
+	
+	
+});

@@ -187,3 +187,28 @@ function namaSekolah() {
 }
 
 console.log(namaSekolah);
+
+
+
+// Mengganti konten sesuai menu
+	// $.getJSON('https://api-sekolah-indonesia.herokuapp.com/sekolah?page=1&perPage=7', function (data) {
+		
+	// 	let daftarSekolah = data.dataSekolah;
+	// 	let jenjangSekolah = '';
+
+	// 	$.each(daftarSekolah, function (i, data) {
+	// 		if (data.bentuk == navigasi) {
+	// 			jenjangSekolah += `
+	// 			<tr>
+	// 			<th scope="row" class="count"></th>
+	// 			<td>`+ data.bentuk + `</td>
+	// 			<td>`+ data.sekolah + `</td>
+	// 			<td>`+ data.npsn + `</td>
+	// 			<td>`+ data.propinsi + `</td>
+	// 			<td>`+ data.kabupaten_kota + `</td>
+	// 	</tr>`;
+	// 		}
+	// 	});
+
+	// 	$('#nama-sekolah').html(jenjangSekolah);
+	// });

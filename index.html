@@ -28,10 +28,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled">Disabled</a>
+                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    <a class="nav-link" href="#">SD</a>
+                    <a class="nav-link" href="#">SMP</a>
+                    <a class="nav-link" href="#">SMU</a>
+                    <a class="nav-link" href="#">SMK</a>
                 </div>
             </div>
         </div>
@@ -40,40 +41,26 @@
     <!-- Navigation End -->
 
     <header class="container py-5">
-        <h1 class="site-title text-center">Daftar Nama Sekolah di Indonesia</h1>
+        <h1 class="site-title text-center">Daftar Nama <span id="jenjang-navigasi">Sekolah</span> di Indonesia</h1>
     </header>
 
     <!-- Main Start -->
-    <main class="container">
+    <main class="container mb-5">
         <div class="row">
-            <div class="col-md-12" id="nama-sekolah">
+            <div class="col-md-12">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Jenjang</th>
+                            <th scope="col">Nama Sekolah</th>
+                            <th scope="col">NPSN</th>
+                            <th scope="col">Provinsi</th>
+                            <th scope="col">Kota/Kabupaten</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                    <tbody id="nama-sekolah">
+                        <!-- Javascript here -->
                     </tbody>
                 </table>
             </div>

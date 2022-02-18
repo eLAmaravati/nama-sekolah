@@ -5,4 +5,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+table {
+  counter-reset: section;
+}
+
+.count:before {
+  counter-increment: section;
+  content: counter(section);
+}
+
+.navbar-nav .nav-link.active {
+  color: limegreen !important;
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  display: block;
+  border: 2px solid limegreen;
+  border-radius: 10%;
+  margin-top: 5px;
+}
+
+#jenjang-navigasi {
+  color: limegreen;
 }/*# sourceMappingURL=style.css.map */
