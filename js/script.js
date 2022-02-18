@@ -1,5 +1,5 @@
 function semuaSekolah() {
-	$.getJSON('https://api-sekolah-indonesia.herokuapp.com/sekolah?page=1&perPage=100', function (data) {
+	$.getJSON('https://api-sekolah-indonesia.herokuapp.com/sekolah?page=1&perPage=50', function (data) {
 	
 		let daftarSekolah = data.dataSekolah;
 	
@@ -9,7 +9,7 @@ function semuaSekolah() {
 			<tr>
 					<th scope="row" class="count"></th>
 					<td>`+ data.bentuk +`</td>
-					<td>`+ data.sekolah +`</td>
+					<td>`+ data.sekolah +`</a></td>
 					<td>`+ data.npsn +`</td>
 					<td>`+ data.propinsi +`</td>
 					<td>`+ data.kabupaten_kota +`</td>

@@ -4,7 +4,7 @@ Web ini dibuat dalam rangka praktik membuat web dari public API. Sumber tutorial
 
 ## Live Website
 
-Live website bisa diakses di sini:
+Live website bisa diakses di sini: [https://elamaravati.github.io/nama-sekolah/](https://elamaravati.github.io/nama-sekolah/)
 
 ## Catatan
 
